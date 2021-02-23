@@ -33,7 +33,7 @@ public class CSP <V, D>{
     
     public void addConstraint(Constraint<V, D> constraint){
         for(V variable:constraint.variables){
-            //Variable que se encuentra en el constraint tambiénsea parte del CSP
+            //Variable que se encuentra en el constraint también sea parte del CSP
             
             if(!this.variables.contains(variable)){
                 throw new IllegalArgumentException("La variable "+ variable+" no se encuentra en el CSP");
@@ -83,5 +83,14 @@ public class CSP <V, D>{
             }
         }
         return null;
+    }
+    public Map<V, D> AC3(List<V> variables, Map<V, List<D>> domains, Map<V, List<Constraint<V,D>>> constraints){
+         for(V value: variables){ 
+             
+         }
+        return null;
+    }
+    public boolean ArcReduce (){
+        return true;
     }
 }

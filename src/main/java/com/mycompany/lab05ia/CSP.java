@@ -90,7 +90,11 @@ public class CSP <V, D>{
          }
         return null;
     }
-    public boolean ArcReduce (){
+    public boolean ArcReduce (V var1, V var2){
+        boolean cambio = false;
+        for(V value: domains.keySet()){
+            
+        }
         return true;
     }
 }
